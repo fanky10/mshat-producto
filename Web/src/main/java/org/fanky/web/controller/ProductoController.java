@@ -2,7 +2,6 @@ package org.fanky.web.controller;
 
 import java.util.Map;
 
-
 import org.fanky.web.business.ProductoBAO;
 import org.fanky.web.entity.Producto;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -17,18 +17,11 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
  
     <context:annotation-config />
-    <!-- el package donde tiene que scannear -->
-    <context:component-scan base-package="org.fanky.web" />
+    <tx:annotation-driven />
     
-    
-    <bean id="messageSource"
-        class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
-        <property name="basename" value="classpath:messages" />
-        <property name="defaultEncoding" value="UTF-8" />
-    </bean>
     <bean id="propertyConfigurer"
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
-        p:location="jdbc.properties" />
+        p:location="classpath:jdbc.properties" />
         
        <!-- Used datasource with apache class, asi que me pase a spring-->
  	 <bean id="dataSource"
@@ -56,7 +49,7 @@
         </property>
     </bean>
  
-    <tx:annotation-driven />
+    
     <bean id="transactionManager"
         class="org.springframework.orm.hibernate3.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />

@@ -3,8 +3,6 @@ package org.fanky.web.dao;
 import java.util.List;
 
 import org.fanky.web.entity.Producto;
-
-
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
