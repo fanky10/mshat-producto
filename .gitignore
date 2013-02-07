@@ -1,7 +1,7 @@
 *.class
-classpath
+*/.classpath
 .project
-.settings/
+.settings
 target/
 *.prefs
 *.project
@@ -51,7 +51,5 @@ dev/AppModel/.classpath
 dev/AppModel/.project
 
 dev/AppModel/.settings/.component
-
-*.prefs
 
 *.prefs

@@ -4,35 +4,31 @@
        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
 <tiles-definitions>
 	<!-- Como base usa el layout, el template -->
-	<!--
-		ya casi nadie usa menues xD 
-		 /> 
-	-->
-    <definition name="base.definition"
-        template="/WEB-INF/jsp/layout.jsp">
-        <put-attribute name="title" value="" />
-        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
-        <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp"/>
-        <put-attribute name="body" value="" />
-        <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
-    </definition>
+	<!-- ya casi nadie usa menues xD /> -->
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
 	<definition name="producto_list" extends="base.definition">
-        <put-attribute name="title" value="Lista Producto" />
-        <put-attribute name="body" value="/WEB-INF/jsp/producto_list.jsp" />
-    </definition>
- 	
-    <definition name="producto_add" extends="base.definition">
-        <put-attribute name="title" value="Nuevo Producto" />
-        <put-attribute name="body" value="/WEB-INF/jsp/producto_add.jsp" />
-    </definition>
-    
- 	<definition name="producto_edit" extends="base.definition">
-        <put-attribute name="title" value="Editar Producto" />
-        <put-attribute name="body" value="/WEB-INF/jsp/producto_edit.jsp" />
-    </definition>
-    
-    <definition name="test_enum" extends="base.definition">
-        <put-attribute name="title" value="Probar Enums" />
-        <put-attribute name="body" value="/WEB-INF/jsp/testenum.jsp" />
-    </definition>
+		<put-attribute name="title" value="Lista Producto" />
+		<put-attribute name="body" value="/WEB-INF/jsp/producto_list.jsp" />
+	</definition>
+
+	<definition name="producto_add" extends="base.definition">
+		<put-attribute name="title" value="Nuevo Producto" />
+		<put-attribute name="body" value="/WEB-INF/jsp/producto_add.jsp" />
+	</definition>
+
+	<definition name="producto_edit" extends="base.definition">
+		<put-attribute name="title" value="Editar Producto" />
+		<put-attribute name="body" value="/WEB-INF/jsp/producto_edit.jsp" />
+	</definition>
+
+	<definition name="test_enum" extends="base.definition">
+		<put-attribute name="title" value="Probar Enums" />
+		<put-attribute name="body" value="/WEB-INF/jsp/testenum.jsp" />
+	</definition>
 </tiles-definitions>
